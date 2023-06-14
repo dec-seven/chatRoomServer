@@ -1,7 +1,11 @@
 // 创建服务器用于监听端口 接受请求
  const http = require('http').createServer()
 // 加载socket模块，获取socket.io对象
-const socketio = reqire('socket.io')(http)
+const socketio = reqire('socket.io')(http,{
+  cors:{
+    origin:'*'
+  }
+})
 
 // 通过socketio监听客户端发送的请求
 socketio.on('contenction',(socket)=>{
