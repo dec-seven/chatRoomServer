@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "koa": "^2.14.2",
     "socket.io": "^4.6.2"
   }
 }
